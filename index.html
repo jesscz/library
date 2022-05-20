@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>My Library</h1>
+    <div id="form">
+        <form action="" id="form-subs">
+            <div class="user-sub">
+                <label for="book">Book:</label><br>
+                <input type="text" id="book" name="book" required>
+            </div>
+            <div class="user-sub">
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="user-sub">
+                <label for="pages">Pages:</label><br>
+                <input type="number" min="1" step="1" id="pages" name="pages" required>
+            </div>
+            <div class="user-sub">
+                <label for="progress">Status:</label><br>
+                <select name="progress" id="progress">
+                    <option value="read">Not Read</option>
+                    <option value="not-read">Read</option>
+                </select>
+            </div>
+        </form>
+        <div>
+            <button id="submit-button">Submit</button>
+        </div>
+    </div>
+    <div id="display">
+        <div id="title-grid">
+            <div class="title-grid">Title</div>
+            <div class="title-grid">Author</div>
+            <div class="title-grid">Pages</div>
+            <div class="title-grid">Status</div>
+            <div id="title-hr"><hr></div>
+        </div>
+        <div id="book-display"></div>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+body{
+    margin: 5px;
+    font-family: 'Plus Jakarta Sans', 'Arial', sans-serif;
+}
+h1{
+    text-align: center;
+}
+#form{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    align-items: end;
+}
+#form-subs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 50px;
+    margin-bottom: 20px;
+}
+#submit-button{
+    align-items: end;
+}
+#display{
+    margin: 50px;
+}
+#title-grid, #book-display{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+    grid-auto-rows: auto
+}
+#title-grid{
+    grid-template-rows: 30px 5px;
+}
+#title-hr{
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+}
+.books{
+    display: grid;
+    grid-column: 1 / 6;
+    margin-top: 30px;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+}
