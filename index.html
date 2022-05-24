@@ -13,32 +13,31 @@
     <div id="form">
         <form action="" id="form-subs">
             <div class="user-sub">
-                <label for="book">Book:</label><br>
+                <label for="book">Book:</label>
                 <input type="text" id="book" name="book" required>
             </div>
             <div class="user-sub">
-                <label for="author">Author:</label><br>
+                <label for="author">Author:</label>
                 <input type="text" id="author" name="author" required>
             </div>
             <div class="user-sub">
-                <label for="pages">Pages:</label><br>
+                <label for="pages">Pages:</label>
                 <input type="number" min="1" step="1" id="pages" name="pages" required>
             </div>
             <div class="user-sub">
-                <label for="progress">Status:</label><br>
+                <label for="progress">Status:</label>
                 <select name="progress" id="progress">
-                    <option value="read">Not Read</option>
-                    <option value="not-read">Read</option>
+                    <option value="Not Read">Not Read</option>
+                    <option value="Read">Read</option>
                 </select>
             </div>
+        
         </form>
-        <div>
-            <button id="submit-button">Submit</button>
-        </div>
+        <button id="submit-button">Submit</button>
     </div>
     <div id="display">
         <div id="title-grid">
-            <div class="title-grid">Title</div>
+            <div class="title-grid" id="title-id">Title</div>
             <div class="title-grid">Author</div>
             <div class="title-grid">Pages</div>
             <div class="title-grid">Status</div>

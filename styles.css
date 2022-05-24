@@ -3,22 +3,38 @@ body{
     margin: 5px;
     font-family: 'Plus Jakarta Sans', 'Arial', sans-serif;
 }
+button{
+    font-family: 'Plus Jakarta Sans', 'Arial', sans-serif;
+}
 h1{
     text-align: center;
 }
 #form{
     display: grid;
-    grid-template-columns: 10fr 1fr;
-    align-items: end;
+    max-width: 1200px;
+    grid-template-columns: auto 80px;
 }
 #form-subs{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 50px;
+    gap: 10px;
     margin-bottom: 20px;
 }
+.user-sub{
+    display: grid;
+    grid-template-rows: 2em 2em;
+}
+.user-sub>label{
+    padding: 5px;
+}
+.user-sub>input{
+    grid-row: 2 / 3;
+}
 #submit-button{
-    align-items: end;
+    height: 30px;
+    position: relative;
+    top: 70px;
 }
 #display{
     margin: 50px;
@@ -26,10 +42,10 @@ h1{
 #title-grid, #book-display{
     display: grid;
     grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
-    grid-auto-rows: auto
+    grid-auto-rows: auto;
 }
-#title-grid{
-    grid-template-rows: 30px 5px;
+.title-grid{
+    padding: 10px;
 }
 #title-hr{
     grid-column: 1 / 6;
@@ -38,6 +54,25 @@ h1{
 .books{
     display: grid;
     grid-column: 1 / 6;
-    margin-top: 30px;
     grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+    height: 70px;
+    font-weight: 200;
+    align-items: center;
+}
+.books>p{
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+.books>button{
+    grid-column: 5 / 6;
+    height: 30px;
+    width: 60px;
+    border: none;
+    place-self: center;
+    background-color: rgb(214, 64, 64);
+    color: white;
+    border-radius: 10%;
+}
+.books>button:hover{
+    opacity: 70%;
 }
